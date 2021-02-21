@@ -14,7 +14,7 @@ class _SignInPageState extends State<SignInPage> {
 
     return GeneralPage(
       title: 'Sign In',
-      subtitle: 'Find your best ever meal',
+      subtitle: "Find your best ever meal",
       child: Column(
         children: [
           Container(
@@ -82,7 +82,7 @@ class _SignInPageState extends State<SignInPage> {
                             borderRadius: BorderRadius.circular(8))),
                     child: Text('Sign In',
                         style: GoogleFonts.poppins(
-                            color: Colors.white, fontWeight: FontWeight.w500))),
+                            color: Colors.black, fontWeight: FontWeight.w500))),
           ),
           Container(
             width: double.infinity,
@@ -95,7 +95,9 @@ class _SignInPageState extends State<SignInPage> {
                     color: mainColor,
                   )
                 : ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(SignUpPage());
+                    },
                     style: ElevatedButton.styleFrom(
                         primary: greyColor,
                         elevation: 0,
